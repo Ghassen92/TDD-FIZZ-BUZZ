@@ -53,4 +53,13 @@ public class FizzBuzzTest {
 
         Assertions.assertEquals("Buzz",output);
     }
+
+    @Test
+    void should_return_fuzz_for_6(){
+        int input = 6;
+
+        String output=FizzBuzz.getResult(6);
+
+        Assertions.assertEquals("Fuzz",output);
+    }
 }
