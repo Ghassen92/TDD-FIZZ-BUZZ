@@ -20,4 +20,11 @@ public class FizzBuzzTest {
         Assertions.assertDoesNotThrow(() -> FizzBuzz.getResult(input));
     }
 
+    @Test
+    void should_throw_exception_for_0() {
+        int input = 0;
+
+        Assertions.assertThrows(RuntimeException.class,
+                () -> FizzBuzz.getResult(input));    }
+
 }
