@@ -98,4 +98,13 @@ public class FizzBuzzTest {
 
         Assertions.assertEquals(input,output);
     }
+
+    @Test
+    void should_return_buzz_for_10(){
+        int input = 10;
+
+        String output= (String) FizzBuzz.getResult(input);
+
+        Assertions.assertEquals("Buzz",output);
+    }
 }
