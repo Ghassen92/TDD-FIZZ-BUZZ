@@ -9,7 +9,7 @@ public class FizzBuzz {
         if (input <= 0) throw new RuntimeException("Input should be greator then 0");
         if (input % 3 == 0)
             return FUZZ.toString();
-        else if (input == 5 || input == 10 || input == 15)
+        else if (input % 5 == 0)
             return BUZZ.toString();
         else return input;
     }
