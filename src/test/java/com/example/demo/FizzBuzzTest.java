@@ -80,4 +80,13 @@ public class FizzBuzzTest {
 
         Assertions.assertEquals(1,output);
     }
+
+    @Test
+    void should_return_same_for_13(){
+        int input = 13;
+
+        int output= (int) FizzBuzz.getResult(input);
+
+        Assertions.assertEquals(1,output);
+    }
 }
