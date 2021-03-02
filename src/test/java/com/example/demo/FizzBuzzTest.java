@@ -89,4 +89,5 @@ public class FizzBuzzTest {
 
         Assertions.assertEquals(13,output);
     }
+
 }
