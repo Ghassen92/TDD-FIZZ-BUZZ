@@ -90,4 +90,12 @@ public class FizzBuzzTest {
         Assertions.assertEquals(13,output);
     }
 
+    @Test
+    void should_return_same_for_4(){
+        int input = 4;
+
+        int output= (int) FizzBuzz.getResult(input);
+
+        Assertions.assertEquals(input,output);
+    }
 }
