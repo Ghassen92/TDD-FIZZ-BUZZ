@@ -62,4 +62,13 @@ public class FizzBuzzTest {
 
         Assertions.assertEquals("Fuzz",output);
     }
+
+    @Test
+    void should_return_fuzz_for_9(){
+        int input = 9;
+
+        String output=FizzBuzz.getResult(6);
+
+        Assertions.assertEquals("Fuzz",output);
+    }
 }
