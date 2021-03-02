@@ -1,14 +1,15 @@
 package com.example.demo;
 
+import static com.example.demo.EFuzzBuzz.BUZZ;
+import static com.example.demo.EFuzzBuzz.FUZZ;
+
 public class FizzBuzz {
 
     public static String getResult(int input) {
         if (input <= 0) throw new RuntimeException("Input should be greator then 0");
-        String output;
         if (input == 3 | input == 6)
-            output = "Fuzz";
+            return FUZZ.toString();
         else
-            output = "Buzz";
-        return output;
+            return BUZZ.toString();
     }
 }
