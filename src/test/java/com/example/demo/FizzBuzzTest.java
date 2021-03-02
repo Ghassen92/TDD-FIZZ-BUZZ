@@ -87,6 +87,6 @@ public class FizzBuzzTest {
 
         int output= (int) FizzBuzz.getResult(input);
 
-        Assertions.assertEquals(1,output);
+        Assertions.assertEquals(13,output);
     }
 }
