@@ -25,6 +25,15 @@ public class FizzBuzzTest {
         int input = 0;
 
         Assertions.assertThrows(RuntimeException.class,
-                () -> FizzBuzz.getResult(input));    }
+                () -> FizzBuzz.getResult(input));
+    }
+
+    @Test
+    void should_throw_exception_for_minus4() {
+        int input = -4;
+
+        Assertions.assertThrows(RuntimeException.class,
+                () -> FizzBuzz.getResult(input));
+    }
 
 }
