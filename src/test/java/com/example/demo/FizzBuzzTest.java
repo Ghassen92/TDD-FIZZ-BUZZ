@@ -45,4 +45,12 @@ public class FizzBuzzTest {
         Assertions.assertEquals("Fuzz",output);
     }
 
+    @Test
+    void should_return_buzz_for_5(){
+        int input = 5;
+
+        String output=FizzBuzz.getResult(5);
+
+        Assertions.assertEquals("Buzz",output);
+    }
 }
