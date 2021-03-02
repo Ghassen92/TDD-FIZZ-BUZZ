@@ -13,4 +13,11 @@ public class FizzBuzzTest {
                 () -> FizzBuzz.getResult(input));
     }
 
+    @Test
+    void should_not_throw_exception_for_1() {
+        int input = 1;
+
+        Assertions.assertDoesNotThrow(() -> FizzBuzz.getResult(input));
+    }
+
 }
