@@ -107,4 +107,14 @@ public class FizzBuzzTest {
 
         Assertions.assertEquals("Buzz",output);
     }
+
+    @Test
+    void should_return_buzz_for_15(){
+        int input = 10;
+
+        String output= (String) FizzBuzz.getResult(input);
+
+        Assertions.assertEquals("Buzz",output);
+    }
+
 }
