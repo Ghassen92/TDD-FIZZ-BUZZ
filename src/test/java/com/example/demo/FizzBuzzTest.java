@@ -40,7 +40,7 @@ public class FizzBuzzTest {
     void should_return_fuzz_for_3(){
         int input = 3;
 
-        String output=FizzBuzz.getResult(3);
+        String output= (String) FizzBuzz.getResult(input);
 
         Assertions.assertEquals("Fuzz",output);
     }
@@ -49,7 +49,7 @@ public class FizzBuzzTest {
     void should_return_buzz_for_5(){
         int input = 5;
 
-        String output=FizzBuzz.getResult(5);
+        String output= (String) FizzBuzz.getResult(input);
 
         Assertions.assertEquals("Buzz",output);
     }
@@ -58,7 +58,7 @@ public class FizzBuzzTest {
     void should_return_fuzz_for_6(){
         int input = 6;
 
-        String output=FizzBuzz.getResult(6);
+        String output= (String) FizzBuzz.getResult(input);
 
         Assertions.assertEquals("Fuzz",output);
     }
@@ -67,8 +67,17 @@ public class FizzBuzzTest {
     void should_return_fuzz_for_9(){
         int input = 9;
 
-        String output=FizzBuzz.getResult(6);
+        String output= (String) FizzBuzz.getResult(input);
 
         Assertions.assertEquals("Fuzz",output);
+    }
+
+    @Test
+    void should_return_same_for_1(){
+        int input = 1;
+
+        int output= (int) FizzBuzz.getResult(input);
+
+        Assertions.assertEquals(1,output);
     }
 }
